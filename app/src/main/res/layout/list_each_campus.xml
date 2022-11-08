@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llItemList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/ivLogoListKampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_unesa"
+        android:layout_weight="4"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tvNamaListKampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Universitas Negeri Surabaya"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:fontFamily="@font/mssemibold"/>
+        <TextView
+            android:id="@+id/tvAlamatListKampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tvNamaListKampus"
+            android:text="Jl. Lidah Wetan, Lidah Wetan, Kec. Lakarsantri, Kota SBY, Jawa Timur 60213"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:fontFamily="@font/msmedium"/>
+    </RelativeLayout>
+
+</LinearLayout>
